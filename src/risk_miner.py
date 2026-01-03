@@ -169,9 +169,8 @@ class RiskMiner:
                 FOR (f:GeoFeature) ON (f.embedding)
                 OPTIONS {
                     indexConfig: {
-                        `index_type`: 'vector-1.0',
-                        `embedding.dimensions`: $dim,
-                        `embedding.similarity_function`: 'cosine'
+                        `vector.dimensions`: $dim,
+                        `vector.similarity_function`: 'cosine'
                     }
                 }
                 """,

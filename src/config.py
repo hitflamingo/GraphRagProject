@@ -1,5 +1,5 @@
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional
 
 from dotenv import load_dotenv
@@ -41,7 +41,7 @@ class Settings:
     openai: OpenAISettings
     neo4j: Neo4jSettings
     defaults: DefaultsSettings
-    risk: RiskSettings = RiskSettings()
+    risk: RiskSettings = field(default_factory=RiskSettings)
 
 
 def load_settings() -> Settings:
