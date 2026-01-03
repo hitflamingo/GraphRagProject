@@ -1,0 +1,3184 @@
+{
+  "fusion": {
+    "extraction": {
+      "part_id": "C2 E53234023",
+      "part_number": "CLIP L22-25 C29",
+      "material": "ALD0004",
+      "material_state": "SEE ECH",
+      "general_tolerance_standard": "ABD0001-1",
+      "features": [
+        {
+          "feature_id": "Edge_01",
+          "type": "EdgeLength",
+          "target_value": 421,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": false,
+            "upper": null,
+            "lower": null,
+            "type": "null"
+          },
+          "bbox": [
+            178,
+            369,
+            1027,
+            681
+          ]
+        },
+        {
+          "feature_id": "Edge_02",
+          "type": "EdgeLength",
+          "target_value": 128,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": false,
+            "upper": null,
+            "lower": null,
+            "type": "null"
+          },
+          "bbox": [
+            178,
+            369,
+            1027,
+            681
+          ]
+        },
+        {
+          "feature_id": "BendRadius_01",
+          "type": "BendRadius",
+          "target_value": 4,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.1,
+            "lower": -0.1,
+            "type": "symmetric"
+          },
+          "bbox": [
+            725,
+            745,
+            850,
+            780
+          ]
+        },
+        {
+          "feature_id": "Hole_01",
+          "type": "HoleDiameter",
+          "target_value": 6.2,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.1,
+            "lower": -0.1,
+            "type": "symmetric"
+          },
+          "bbox": [
+            240,
+            390,
+            955,
+            610
+          ],
+          "gdt": {
+            "type": "Position",
+            "value": 0.1,
+            "datums": [
+              "A",
+              "B"
+            ]
+          }
+        },
+        {
+          "feature_id": "Hole_02",
+          "type": "HoleDiameter",
+          "target_value": 6.2,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.1,
+            "lower": -0.1,
+            "type": "symmetric"
+          },
+          "bbox": [
+            240,
+            390,
+            955,
+            610
+          ],
+          "gdt": {
+            "type": "Position",
+            "value": 0.1,
+            "datums": [
+              "A",
+              "B"
+            ]
+          }
+        },
+        {
+          "feature_id": "HoleToEdgeDist_01",
+          "type": "HoleToEdgeDist",
+          "target_value": 3.2,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.4,
+            "lower": -0.4,
+            "type": "limits"
+          },
+          "bbox": [
+            195,
+            360,
+            250,
+            380
+          ]
+        },
+        {
+          "feature_id": "HoleToEdgeDist_02",
+          "type": "HoleToEdgeDist",
+          "target_value": 3.2,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.4,
+            "lower": -0.4,
+            "type": "limits"
+          },
+          "bbox": [
+            940,
+            565,
+            995,
+            585
+          ]
+        },
+        {
+          "feature_id": "HoleToEdgeDist_03",
+          "type": "HoleToEdgeDist",
+          "target_value": 3.2,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.4,
+            "lower": -0.4,
+            "type": "limits"
+          },
+          "bbox": [
+            460,
+            635,
+            515,
+            655
+          ]
+        },
+        {
+          "feature_id": "HoleToEdgeDist_04",
+          "type": "HoleToEdgeDist",
+          "target_value": 3.2,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.4,
+            "lower": -0.4,
+            "type": "limits"
+          },
+          "bbox": [
+            705,
+            325,
+            760,
+            345
+          ]
+        },
+        {
+          "feature_id": "HoleToEdgeDist_05",
+          "type": "HoleToEdgeDist",
+          "target_value": 3.2,
+          "unit": "mm",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.4,
+            "lower": -0.4,
+            "type": "limits"
+          },
+          "bbox": [
+            150,
+            655,
+            205,
+            675
+          ]
+        },
+        {
+          "feature_id": "BendAngle_01",
+          "type": "BendAngle",
+          "target_value": 90,
+          "unit": "degrees",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.5,
+            "lower": -0.5,
+            "type": "symmetric"
+          },
+          "bbox": [
+            305,
+            580,
+            350,
+            620
+          ]
+        },
+        {
+          "feature_id": "BendAngle_02",
+          "type": "BendAngle",
+          "target_value": 90,
+          "unit": "degrees",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.5,
+            "lower": -0.5,
+            "type": "symmetric"
+          },
+          "bbox": [
+            520,
+            310,
+            565,
+            350
+          ]
+        },
+        {
+          "feature_id": "BendAngle_03",
+          "type": "BendAngle",
+          "target_value": 90,
+          "unit": "degrees",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.5,
+            "lower": -0.5,
+            "type": "symmetric"
+          },
+          "bbox": [
+            765,
+            580,
+            810,
+            620
+          ]
+        },
+        {
+          "feature_id": "BendAngle_04",
+          "type": "BendAngle",
+          "target_value": 90,
+          "unit": "degrees",
+          "tolerance": {
+            "is_explicit": true,
+            "upper": 0.5,
+            "lower": -0.5,
+            "type": "symmetric"
+          },
+          "bbox": [
+            940,
+            495,
+            985,
+            535
+          ]
+        }
+      ],
+      "standards": [
+        "ABD0001-1",
+        "AIRBUS ABD0002"
+      ],
+      "notes": [
+        "RAYON DE PLIAGE: R=4",
+        "BEND RADIUS: R=4",
+        "K FACTEUR = 0,4",
+        "K FACTOR = 0.4",
+        "TROUS DE FABRICATION Ø6,2",
+        "TOOLING HOLES DIA 6.2"
+      ],
+      "scale": "1:1",
+      "unfolded_dimensions": {
+        "length": 421,
+        "width": 128,
+        "unit": "mm"
+      },
+      "gdt_callouts": [
+        {
+          "type": "Position",
+          "value": 0.1,
+          "datums": [
+            "A",
+            "B"
+          ],
+          "applied_to": "Hole_01",
+          "bbox": [
+            452,
+            487,
+            593,
+            565
+          ]
+        },
+        {
+          "type": "Position",
+          "value": 0.1,
+          "datums": [
+            "A",
+            "B"
+          ],
+          "applied_to": "Hole_02",
+          "bbox": [
+            588,
+            487,
+            728,
+            565
+          ]
+        },
+        {
+          "type": "Position",
+          "value": 0.1,
+          "datums": [
+            "A",
+            "B"
+          ],
+          "applied_to": "Hole_03",
+          "bbox": [
+            723,
+            487,
+            863,
+            565
+          ]
+        },
+        {
+          "type": "Position",
+          "value": 0.1,
+          "datums": [
+            "A",
+            "B"
+          ],
+          "applied_to": "Hole_04",
+          "bbox": [
+            858,
+            487,
+            998,
+            565
+          ]
+        },
+        {
+          "type": "Perpendicularity",
+          "value": 0.2,
+          "datums": [
+            "A"
+          ],
+          "applied_to": "Surface_01",
+          "bbox": [
+            1020,
+            487,
+            1160,
+            565
+          ]
+        },
+        {
+          "type": "Parallelism",
+          "value": 0.2,
+          "datums": [
+            "A"
+          ],
+          "applied_to": "Surface_02",
+          "bbox": [
+            1155,
+            487,
+            1295,
+            565
+          ]
+        },
+        {
+          "type": "Flatness",
+          "value": 0.1,
+          "applied_to": "Surface_03",
+          "bbox": [
+            1290,
+            487,
+            1430,
+            565
+          ]
+        },
+        {
+          "type": "Surface Finish",
+          "value": "Ra 3.2",
+          "applied_to": "All Surfaces",
+          "bbox": [
+            1020,
+            487,
+            1160,
+            565
+          ]
+        }
+      ]
+    },
+    "process_data": {
+      "part_id": "xizi_card_1",
+      "process_steps": [
+        {
+          "step_number": "10",
+          "step_id": "10",
+          "process_name": "钣金领料\nSM Incoming Inspection /",
+          "name": "钣金领料\nSM Incoming Inspection /",
+          "description": "按FT检查来料的牌号/状态、规格、批号和表面状态；\nInspect incoming material specification/condition, size, lot number and surface quality per FT;\n\n材料代用单号：___________________\nMaterial Substitution Sheet NO:",
+          "parameters": [],
+          "standards": [],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Inspection"
+          ],
+          "tags": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "20",
+          "step_id": "20",
+          "process_name": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+          "name": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+          "description": "按照AIPS03-11-001及XA-OI-0310-01使用数控下料铣铣制外形及孔(参照草图1)，展开数据集E53234023200-01。\nMilling the profile and hole according to AIPS03-11-001 and XA-OI-0310-01(See sketch 1), unfolded data E53234023200-01.",
+          "parameters": [],
+          "standards": [
+            "AIPS03-11-001",
+            "XA-OI-0310-01"
+          ],
+          "equipment": [
+            "数控下料铣"
+          ],
+          "program_number": "",
+          "capabilities": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge"
+          ],
+          "tags": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge"
+          ]
+        },
+        {
+          "step_number": "30",
+          "step_id": "30",
+          "process_name": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+          "name": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+          "description": "按文件ADET0031和XA-OI-0311-01去除零件毛刺。\nDeburring around the edge of the part  according to ADET0031 and XA-OI-0311-01.",
+          "parameters": [],
+          "standards": [
+            "ADET0031",
+            "XA-OI-0311-01"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Finishing"
+          ],
+          "tags": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Finishing"
+          ]
+        },
+        {
+          "step_number": "40",
+          "step_id": "40",
+          "process_name": "钣金下料检验\nSM inspection MYLAR \nE53234023200-01",
+          "name": "钣金下料检验\nSM inspection MYLAR \nE53234023200-01",
+          "description": "1、按XA-QI-0314 进行手工测量;\nSemi-Finished Inspection per XA-QI-0314",
+          "parameters": [],
+          "standards": [
+            "XA-QI-0314"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Inspection"
+          ],
+          "tags": [
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "50",
+          "step_id": "50",
+          "process_name": "通用铝合金手工清洗\nCleaning of aluminum alloys /",
+          "name": "通用铝合金手工清洗\nCleaning of aluminum alloys /",
+          "description": "清洗按照XA-OI-0401/AIPI09-01-002进行;\nCleaning of aluminum alloys  Cleaning per XA-OI-0401/AIPI09-01-002",
+          "parameters": [],
+          "standards": [
+            "XA-OI-0401",
+            "AIPI09-01-002"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Cleaning"
+          ],
+          "tags": [
+            "Cleaning"
+          ]
+        },
+        {
+          "step_number": "60",
+          "step_id": "60",
+          "process_name": "AIPS/AIPI铝合金的固溶\nSolution /",
+          "name": "AIPS/AIPI铝合金的固溶\nSolution /",
+          "description": "1.按文件XA-OI-0401和AIPI04-01-001进行固溶处理，将零件处理到W状态。保温温度为(495±5)℃，保温时间(35±5)min，淬火水温15℃～32℃，淬火过程水温不超过10℃，淬火后，水温≤37.8℃，淬火转移时间≤10秒。调用编号0020程序\nSolution treatment to “W” condition according to XA-OI-0401 and AIPI04-01-001. Temperature is (495±5)℃, soaking time is(35±5)min, quenching in water and initial water temperature is in a range of 15℃～32℃, water temperature shall not rise by more than 10℃ and final temperature less than 37.8℃, maximum quench delay is 10 seconds.Call program No. 0020.\n2.按文件XA-QI-0401进行检验。\nInspect according to XA-QI-0401.",
+          "parameters": [
+            {
+              "name": "Temperature",
+              "target_value": 495,
+              "tolerance": 5,
+              "unit": "C"
+            },
+            {
+              "name": "Soaking Time",
+              "target_value": 35,
+              "tolerance": 5,
+              "unit": "min"
+            },
+            {
+              "name": "Initial Quenching Water Temperature",
+              "target_value": 23.5,
+              "tolerance": 8.5,
+              "unit": "C"
+            },
+            {
+              "name": "Maximum Quench Delay",
+              "target_value": 10,
+              "tolerance": 0,
+              "unit": "s"
+            }
+          ],
+          "standards": [
+            "XA-OI-0401",
+            "AIPI04-01-001",
+            "XA-QI-0401"
+          ],
+          "equipment": [],
+          "program_number": "0020",
+          "capabilities": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Heat_Treatment",
+            "Inspection"
+          ],
+          "tags": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Heat_Treatment",
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "70",
+          "step_id": "70",
+          "process_name": "通用冷藏\nRefrigerate /",
+          "name": "通用冷藏\nRefrigerate /",
+          "description": "1.按文件XA-OI-0401进行冷藏，并在冷藏记录和“W状态成形/校形记录”中填写质量记录。\nRefrigerated storage parts according to XA-OI-0401，and fill the quality records in refrigeration record and “W” Condition Forming/Straightening Record.\n2.按文件XA-QI-0401进行检验。\nInspect according to XA-QI-0401.",
+          "parameters": [],
+          "standards": [
+            "XA-OI-0401",
+            "XA-QI-0401"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Bending",
+            "Forming",
+            "Bend",
+            "Angle",
+            "Inspection"
+          ],
+          "tags": [
+            "Bending",
+            "Forming",
+            "Bend",
+            "Angle",
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "80",
+          "step_id": "80",
+          "process_name": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+          "name": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+          "description": "按文件AIPS 03-10-005以及 XA-OI-0312-02，根据草图1将展开料液压成形，符合图纸的要求。\nHydraulic forming the developed material according to AIPS 03-10-005 and XA-OI-0312-02 to meet the requirements of drawing. See sketch 1.",
+          "parameters": [],
+          "standards": [
+            "AIPS 03-10-005",
+            "XA-OI-0312-02"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Bending",
+            "Forming",
+            "Bend",
+            "Angle"
+          ],
+          "tags": [
+            "Bending",
+            "Forming",
+            "Bend",
+            "Angle"
+          ]
+        },
+        {
+          "step_number": "90",
+          "step_id": "90",
+          "process_name": "钣金校形\nDress MYLAR \nE53234023200-01",
+          "name": "钣金校形\nDress MYLAR \nE53234023200-01",
+          "description": "淬火后，零件在-1℃～37.8℃保持W状态的最长时间为30分钟。冷藏温度在-18℃以下，保存时间不能超过7天。在“W状态成形/校形记录”中填写质量记录。\nReach -1℃ to 37.8℃ after quenching, maximum time held in w condition is 30min. Storage temperature below -18℃ and storage time is less than 7 days. Fill the quality record in “W” Condition Forming/Straightening Record.\n按文件AIPS 03-10-005及XA-OI-0312-01校形零件，符合图纸及公差要求；\nStraightening  parts according to AIPS 03-10-005  and XA-OI-0312-01to meet the requirments of drawing and tolerance.",
+          "parameters": [
+            {
+              "name": "Temperature Range",
+              "target_value": -1,
+              "tolerance": 38.8,
+              "unit": "C"
+            },
+            {
+              "name": "Maximum Time in W Condition",
+              "target_value": 30,
+              "tolerance": 0,
+              "unit": "min"
+            },
+            {
+              "name": "Storage Temperature",
+              "target_value": -18,
+              "tolerance": 0,
+              "unit": "C"
+            },
+            {
+              "name": "Maximum Storage Time",
+              "target_value": 7,
+              "tolerance": 0,
+              "unit": "days"
+            }
+          ],
+          "standards": [
+            "AIPS 03-10-005",
+            "XA-OI-0312-01"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Bending",
+            "Forming",
+            "Bend",
+            "Angle"
+          ],
+          "tags": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Bending",
+            "Forming",
+            "Bend",
+            "Angle"
+          ]
+        },
+        {
+          "step_number": "100",
+          "step_id": "100",
+          "process_name": "钣金成型检验\nSM inspection MYLAR \nE53234023200-01",
+          "name": "钣金成型检验\nSM inspection MYLAR \nE53234023200-01",
+          "description": "1、按XA-QI-0315 进行手工测量;\nSemi-Finished Inspection per XA-QI-0315;",
+          "parameters": [],
+          "standards": [
+            "XA-QI-0315"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Inspection"
+          ],
+          "tags": [
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "110",
+          "step_id": "110",
+          "process_name": "电导率\nElectrical Conductivity Test /",
+          "name": "电导率\nElectrical Conductivity Test /",
+          "description": "在室温（15℃～40℃）保持至少96小时自然时效至T42状态后，按照XA-Lab-2301和AITM6-6004在有效测试区域内进行电导率测试，电导率满足 ：（16.5-21.5）MS/m。\nAfter natural aging at RT (15℃～40℃) for 96 hours minimum to T42 temper, electrical Conductivity Test in the effective test area as per XA-Lab-2301 and AITM6-6004, test value shall meet the requirement：（16.5-21.5）MS/m.\n测试结果/Test value:________________________\n测试时间/Operating time: ________________________",
+          "parameters": [
+            {
+              "name": "Temperature",
+              "target_value": 27.5,
+              "tolerance": 12.5,
+              "unit": "C"
+            },
+            {
+              "name": "Aging Time",
+              "target_value": 96,
+              "tolerance": 0,
+              "unit": "hours"
+            },
+            {
+              "name": "Electrical Conductivity",
+              "target_value": 19,
+              "tolerance": 2.5,
+              "unit": "MS/m"
+            }
+          ],
+          "standards": [
+            "XA-Lab-2301",
+            "AITM6-6004"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Heat_Treatment"
+          ],
+          "tags": [
+            "Heat_Treatment"
+          ]
+        },
+        {
+          "step_number": "120",
+          "step_id": "120",
+          "process_name": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+          "name": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+          "description": "1、按照XA-OI-0201-03/AIPS 02-01-003文件要求，执行K7程序进行非紧公差、不封闭的酒石酸阳极化处理，在质量记录一列记录生产记录编号；\nPerform unsealed TSA of aluminum alloys for no tight dimensional tolerance per K7 program according to XA-OI-0201-03/AIPS 02-01-003, fill the production record No. in the quality record column.\n2、按照XA-QI-0201文件要求进行质量检验。\nQuality inspection per XA-QI-0201.",
+          "parameters": [],
+          "standards": [
+            "XA-OI-0201-03",
+            "AIPS 02-01-003",
+            "XA-QI-0201"
+          ],
+          "equipment": [],
+          "program_number": "K7",
+          "capabilities": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Surface_Treatment",
+            "Anodizing",
+            "Inspection"
+          ],
+          "tags": [
+            "Machining",
+            "Hole_Making",
+            "Profile_Cutting",
+            "Hole",
+            "Edge",
+            "Surface_Treatment",
+            "Anodizing",
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "130",
+          "step_id": "130",
+          "process_name": "AIPS/AIPI喷P60-A底漆\nAIPS/AIPI P60-A primer painting /",
+          "name": "AIPS/AIPI喷P60-A底漆\nAIPS/AIPI P60-A primer painting /",
+          "description": "1、阳极化后24小时之内，按照文件XA-OI-0501-03/AIPS 05-02-009文件要求，喷涂P60-A底漆，在质量记录一列记录喷漆记录编号及漆膜厚度范围值；\nP60-A primer painting per XA-OI-0501-03/AIPS 05-02-009 within 24 hours after anodizing, fill the painting record No. in the quality record column and record film thickness range.\n2、按照XA-QI-0501-03文件要求进行质量检验。\nQuality inspection per XA-QI-0501-03.\n漆膜厚度要求值：15-25μm\nFilm thickness value range shall be 15-25μm\n记录漆膜厚度范围值/ record the range of dry film thickness：_________________________",
+          "parameters": [
+            {
+              "name": "Film Thickness",
+              "target_value": 20,
+              "tolerance": 5,
+              "unit": "μm"
+            }
+          ],
+          "standards": [
+            "XA-OI-0501-03",
+            "AIPS 05-02-009",
+            "XA-QI-0501-03"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Surface_Treatment",
+            "Anodizing",
+            "Painting",
+            "Inspection"
+          ],
+          "tags": [
+            "Surface_Treatment",
+            "Anodizing",
+            "Painting",
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "140",
+          "step_id": "140",
+          "process_name": "AIPS/AIPI喷F70-A面漆\nAIPS/AIPI F70-A topcoat painting /",
+          "name": "AIPS/AIPI喷F70-A面漆\nAIPS/AIPI F70-A topcoat painting /",
+          "description": "1、底漆喷涂后48小时内，按照文件XA-OI-0501-04/AIPS 05-02-009文件要求，喷涂F70-A面漆，在质量记录一列记录喷漆记录编号及漆膜厚度范围值；\nF70-A topcoat painting per XA-OI-0501-04/AIPS 05-02-009 within 48 hours after primer painting, fill the painting record No. in the quality record column and record film thickness range.\n2、按照XA-QI-0501-04文件要求进行质量检验。\nQuality inspection per XA-QI-0501-04.\n漆膜厚度要求值：20-30μm\nFilm thickness value range shall be 20-30μm\n记录漆膜厚度范围值/ record the range of dry film thickness：_________________________",
+          "parameters": [
+            {
+              "name": "Film Thickness",
+              "target_value": 25,
+              "tolerance": 5,
+              "unit": "μm"
+            }
+          ],
+          "standards": [
+            "XA-OI-0501-04",
+            "AIPS 05-02-009",
+            "XA-QI-0501-04"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Surface_Treatment",
+            "Painting",
+            "Inspection"
+          ],
+          "tags": [
+            "Surface_Treatment",
+            "Painting",
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "150",
+          "step_id": "150",
+          "process_name": "喷码\nMarking /",
+          "name": "喷码\nMarking /",
+          "description": "使用喷码机在草图1所示位置喷涂零件标识，按ABD0003/AIPS-08-01-001/XA-OI-0801-02执行。\nUse inkjet paint the part at the position where sketch1 indicated, operated as is seen in XA-OI-0801-02.\n检验要求见XA-QI-0801-02。\nThe inspection requirement is in ABD0003/AIPS-08-01-001/XA-QI-0801-02.",
+          "parameters": [],
+          "standards": [
+            "ABD0003",
+            "AIPS-08-01-001",
+            "XA-OI-0801-02",
+            "XA-QI-0801-02"
+          ],
+          "equipment": [
+            "喷码机",
+            "inkjet paint"
+          ],
+          "program_number": "",
+          "capabilities": [
+            "Surface_Treatment",
+            "Painting",
+            "Inspection"
+          ],
+          "tags": [
+            "Surface_Treatment",
+            "Painting",
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "160",
+          "step_id": "160",
+          "process_name": "零件终检\nFinal Inspection MYLAR \nE53234023200-01",
+          "name": "零件终检\nFinal Inspection MYLAR \nE53234023200-01",
+          "description": "1、按XA-QI-0313终检;\nFinal Inspection per XA-QI-0313;\n2、开具合格证，在质量记录一列记录合格证编号;\nIssue Certificate and record in the Quality Record column。",
+          "parameters": [],
+          "standards": [
+            "XA-QI-0313"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [
+            "Inspection"
+          ],
+          "tags": [
+            "Inspection"
+          ]
+        },
+        {
+          "step_number": "170",
+          "step_id": "170",
+          "process_name": "成品入库\nStorage /",
+          "name": "成品入库\nStorage /",
+          "description": "按XA-OI-1001-01将零件放入聚乙烯薄膜袋中并塑封，将零件移交至零件库房，做好零件入库记录，本记录交由品质部归档。\nPlace parts in polyethylene bags and sealed according to XA-OI-1001-01,transfer the parts to partswarehouse,complete in-stock record,transfer the Traveler to Quality Department.",
+          "parameters": [],
+          "standards": [
+            "XA-OI-1001-01"
+          ],
+          "equipment": [],
+          "program_number": "",
+          "capabilities": [],
+          "tags": []
+        }
+      ],
+      "tolerance_rules": {
+        "6.2": {
+          "type": "Hole",
+          "upper": 0.1,
+          "lower": 0.1,
+          "unit": "mm"
+        },
+        "3.2": {
+          "type": "Hole",
+          "upper": 0.1,
+          "lower": 0.1,
+          "unit": "mm"
+        },
+        "8": {
+          "type": "Height",
+          "upper": 0.8,
+          "lower": 0.8,
+          "unit": "mm"
+        },
+        "21.5": {
+          "type": "Height",
+          "upper": 0.8,
+          "lower": 0.8,
+          "unit": "mm"
+        },
+        "35.5": {
+          "type": "Height",
+          "upper": 1,
+          "lower": 1,
+          "unit": "mm"
+        },
+        "90": {
+          "type": "Angle",
+          "upper": 1,
+          "lower": 1,
+          "unit": "deg"
+        },
+        "4": {
+          "type": "Radius",
+          "upper": 1.5,
+          "lower": 0,
+          "unit": "mm"
+        }
+      },
+      "feature_tolerances": [
+        {
+          "feature_type": "Hole",
+          "nominal": 6.2,
+          "tol_plus": 0.1,
+          "tol_minus": 0.1,
+          "unit": "mm"
+        },
+        {
+          "feature_type": "Hole",
+          "nominal": 3.2,
+          "tol_plus": 0.1,
+          "tol_minus": 0.1,
+          "unit": "mm"
+        },
+        {
+          "feature_type": "Height",
+          "nominal": 8.0,
+          "tol_plus": 0.8,
+          "tol_minus": 0.8,
+          "unit": "mm"
+        },
+        {
+          "feature_type": "Height",
+          "nominal": 21.5,
+          "tol_plus": 0.8,
+          "tol_minus": 0.8,
+          "unit": "mm"
+        },
+        {
+          "feature_type": "Height",
+          "nominal": 35.5,
+          "tol_plus": 1,
+          "tol_minus": 1,
+          "unit": "mm"
+        },
+        {
+          "feature_type": "Angle",
+          "nominal": 90.0,
+          "tol_plus": 1,
+          "tol_minus": 1,
+          "unit": "deg"
+        },
+        {
+          "feature_type": "Radius",
+          "nominal": 4.0,
+          "tol_plus": 1.5,
+          "tol_minus": 0,
+          "unit": "mm"
+        }
+      ],
+      "total_steps": 17
+    },
+    "part_id": "C2 E53234023"
+  },
+  "inspection_plan": {
+    "part_id": "C2 E53234023",
+    "total_inspection_items": 14,
+    "inspection_items": [
+      {
+        "item_id": "INSP_Edge_01",
+        "feature_id": "Edge_01",
+        "feature_type": "EdgeLength",
+        "target_value": 421,
+        "tolerance": {
+          "upper": null,
+          "lower": null
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.81, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.81, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.81, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.81, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.81, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.81, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.76, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.76, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.75, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "Edge_01",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8318982124328613,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8318982124328613,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8318982124328613,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8318982124328613,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8318982124328613,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8318982124328613,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8110413551330566,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8110413551330566,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8110413551330566,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8110413551330566,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8110413551330566,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8110413551330566,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7605576515197754,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7578997611999512,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_04",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7549057006835938,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 钣金领料\nSM Incoming Inspection /, Feature: Edge_01, Type: EdgeLength, Size: 421mm, Tol: N/A"
+        },
+        "decision": {
+          "method": "Manual",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "No adjustment needed; tolerance not explicitly defined and risk is low.",
+          "reasoning_chain": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. Since the explicit tolerance is N/A and the nominal value (421) does not trigger Rule 1 (Tol > 0.05mm), the Vision System is not required. Given the low risk and absence of critical defect history, cost efficiency is prioritized. Therefore, we follow Standard Rule 2 and use AQL 4.0 sampling with manual inspection, which is sufficient for this low-risk scenario without needing to override standard rules."
+        },
+        "measurement_method": "Manual",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "Target 421 mm (Tolerance Not Defined)",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "AIPS03-11-001",
+          "XA-OI-0310-01",
+          "ADET0031",
+          "XA-OI-0311-01",
+          "XA-OI-0401",
+          "AIPI04-01-001",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-01",
+          "XA-OI-0201-03",
+          "AIPS 02-01-003",
+          "XA-QI-0201"
+        ],
+        "dynamic_tolerance_adjustment": "No adjustment needed; tolerance not explicitly defined and risk is low.",
+        "notes": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. Since the explicit tolerance is N/A and the nominal value (421) does not trigger Rule 1 (Tol > 0.05mm), the Vision System is not required. Given the low risk and absence of critical defect history, cost efficiency is prioritized. Therefore, we follow Standard Rule 2 and use AQL 4.0 sampling with manual inspection, which is sufficient for this low-risk scenario without needing to override standard rules."
+      },
+      {
+        "item_id": "INSP_Edge_02",
+        "feature_id": "Edge_02",
+        "feature_type": "EdgeLength",
+        "target_value": 128,
+        "tolerance": {
+          "upper": null,
+          "lower": null
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.82, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.82, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.82, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.82, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.82, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.82, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.77, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.76, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.76, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "Edge_02",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8323941230773926,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8323941230773926,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8323941230773926,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8323941230773926,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8323941230773926,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_02",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8323941230773926,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8197455406188965,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8197455406188965,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8197455406188965,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8197455406188965,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8197455406188965,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Edge_01",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8197455406188965,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7669177055358887,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7630982398986816,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_03",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7605552673339844,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 钣金领料\nSM Incoming Inspection /, Feature: Edge_02, Type: EdgeLength, Size: 128mm, Tol: N/A"
+        },
+        "decision": {
+          "method": "Manual",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "No adjustment needed; nominal value is well-defined and risk is low.",
+          "reasoning_chain": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The feature EdgeLength has a nominal value of 128mm but no explicit tolerance provided. Since the tolerance is not specified and exceeds the threshold for Vision System use (Tol > 0.05mm), Rule 1 does not apply. Given the low risk and absence of defect history, we prioritize cost efficiency by following Rule 2: using AQL 4.0 sampling. Manual inspection is sufficient due to the lack of high-precision requirements and low risk. No dynamic tolerance adjustment is necessary."
+        },
+        "measurement_method": "Manual",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "Target 128 mm (Tolerance Not Defined)",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "AIPS03-11-001",
+          "XA-OI-0310-01",
+          "ADET0031",
+          "XA-OI-0311-01",
+          "XA-OI-0401",
+          "AIPI04-01-001",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-01",
+          "XA-OI-0201-03",
+          "AIPS 02-01-003",
+          "XA-QI-0201"
+        ],
+        "dynamic_tolerance_adjustment": "No adjustment needed; nominal value is well-defined and risk is low.",
+        "notes": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The feature EdgeLength has a nominal value of 128mm but no explicit tolerance provided. Since the tolerance is not specified and exceeds the threshold for Vision System use (Tol > 0.05mm), Rule 1 does not apply. Given the low risk and absence of defect history, we prioritize cost efficiency by following Rule 2: using AQL 4.0 sampling. Manual inspection is sufficient due to the lack of high-precision requirements and low risk. No dynamic tolerance adjustment is necessary."
+      },
+      {
+        "item_id": "INSP_BendRadius_01",
+        "feature_id": "BendRadius_01",
+        "feature_type": "BendRadius",
+        "target_value": 4,
+        "tolerance": {
+          "upper": 0.1,
+          "lower": -0.1
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.88, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.88, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.88, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.84, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8841578960418701,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8841578960418701,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8841578960418701,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8488471508026123,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8488471508026123,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8488471508026123,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8448271751403809,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8448271751403809,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8448271751403809,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8420803546905518,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8420803546905518,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8420803546905518,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8397209644317627,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8397209644317627,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8397209644317627,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 通用冷藏\nRefrigerate /, Feature: BendRadius_01, Type: BendRadius, Size: 4mm, Tol: +0.1/ -0.1"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "No adjustment needed; tolerance is within acceptable range and risk is low.",
+          "reasoning_chain": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendRadius tolerance is ±0.1mm, which exceeds the 0.05mm threshold in Rule 1, thus requiring use of the Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency without compromising quality. No dynamic tolerance adjustment is necessary as there is no history of defects or process instability."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "3.90 ~ 4.10 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "XA-OI-0401",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-02",
+          "XA-OI-0312-01"
+        ],
+        "dynamic_tolerance_adjustment": "No adjustment needed; tolerance is within acceptable range and risk is low.",
+        "notes": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendRadius tolerance is ±0.1mm, which exceeds the 0.05mm threshold in Rule 1, thus requiring use of the Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency without compromising quality. No dynamic tolerance adjustment is necessary as there is no history of defects or process instability."
+      },
+      {
+        "item_id": "INSP_Hole_01",
+        "feature_id": "Hole_01",
+        "feature_type": "HoleDiameter",
+        "target_value": 6.2,
+        "tolerance": {
+          "upper": 0.1,
+          "lower": -0.1
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.85, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.79, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.79, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.78, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "Hole_01",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8562231063842773,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8562231063842773,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8562231063842773,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8562231063842773,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8562231063842773,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8562231063842773,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8535213470458984,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8535213470458984,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8535213470458984,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8535213470458984,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8535213470458984,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8535213470458984,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7914609909057617,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7877583503723145,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_05",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7848858833312988,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 钣金领料\nSM Incoming Inspection /, Feature: Hole_01, Type: HoleDiameter, Size: 6.2mm, Tol: +0.1/ -0.1"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and historical evidence shows no known defects with severity, indicating a stable process. The nominal HoleDiameter is 6.2mm with a tolerance of ±0.1mm, which exceeds 0.05mm, triggering Rule 1 to use the Vision System. Since the risk is low, cost efficiency is prioritized, so AQL 4.0 sampling is applied per Rule 2. No dynamic tolerance adjustment is needed as there is no history of significant variation or failure modes. Thus, the inspection plan follows standard rules without override."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "6.10 ~ 6.30 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "AIPS03-11-001",
+          "XA-OI-0310-01",
+          "ADET0031",
+          "XA-OI-0311-01",
+          "XA-OI-0401",
+          "AIPI04-01-001",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-01",
+          "XA-OI-0201-03",
+          "AIPS 02-01-003",
+          "XA-QI-0201"
+        ],
+        "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+        "notes": "The risk level is LOW, and historical evidence shows no known defects with severity, indicating a stable process. The nominal HoleDiameter is 6.2mm with a tolerance of ±0.1mm, which exceeds 0.05mm, triggering Rule 1 to use the Vision System. Since the risk is low, cost efficiency is prioritized, so AQL 4.0 sampling is applied per Rule 2. No dynamic tolerance adjustment is needed as there is no history of significant variation or failure modes. Thus, the inspection plan follows standard rules without override."
+      },
+      {
+        "item_id": "INSP_Hole_02",
+        "feature_id": "Hole_02",
+        "feature_type": "HoleDiameter",
+        "target_value": 6.2,
+        "tolerance": {
+          "upper": 0.1,
+          "lower": -0.1
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.86, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.79, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.79, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.78, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "Hole_02",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.859504222869873,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.859504222869873,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.859504222869873,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.859504222869873,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.859504222869873,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_02",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.859504222869873,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "钣金领料\nSM Incoming Inspection /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8565759658813477,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "法国数控叠料下料铣床钣金下料\nNC Routing /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8565759658813477,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "钣金钳工（新）\nBenchwork MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8565759658813477,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "AIPS/AIPI铝合金的固溶\nSolution /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8565759658813477,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8565759658813477,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "Hole_01",
+              "process_step": "AIPS/AIPI酒石酸硫酸阳极化紧公差不封闭\nAIPS/AIPI unsealed TSA for tight dimensional tolerance /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8565759658813477,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7914977073669434,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.7884459495544434,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_05",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.784390926361084,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 钣金领料\nSM Incoming Inspection /, Feature: Hole_02, Type: HoleDiameter, Size: 6.2mm, Tol: +0.1/ -0.1"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and historical evidence shows no significant defects (all severity values are 0.00). The feature HoleDiameter has a tolerance of ±0.1mm, which exceeds the 0.05mm threshold in Rule 1, justifying the use of Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency without compromising quality. No dynamic tolerance adjustment is needed due to lack of historical failure patterns or high-risk indicators."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "6.10 ~ 6.30 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "AIPS03-11-001",
+          "XA-OI-0310-01",
+          "ADET0031",
+          "XA-OI-0311-01",
+          "XA-OI-0401",
+          "AIPI04-01-001",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-01",
+          "XA-OI-0201-03",
+          "AIPS 02-01-003",
+          "XA-QI-0201"
+        ],
+        "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+        "notes": "The risk level is LOW, and historical evidence shows no significant defects (all severity values are 0.00). The feature HoleDiameter has a tolerance of ±0.1mm, which exceeds the 0.05mm threshold in Rule 1, justifying the use of Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency without compromising quality. No dynamic tolerance adjustment is needed due to lack of historical failure patterns or high-risk indicators."
+      },
+      {
+        "item_id": "INSP_HoleToEdgeDist_01",
+        "feature_id": "HoleToEdgeDist_01",
+        "feature_type": "HoleToEdgeDist",
+        "target_value": 3.2,
+        "tolerance": {
+          "upper": 0.4,
+          "lower": -0.4
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9745025634765625,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_03",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9726228713989258,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.971735954284668,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_04",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9683113098144531,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_05",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9673147201538086,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: None, Feature: HoleToEdgeDist_01, Type: HoleToEdgeDist, Size: 3.2mm, Tol: +0.4/ -0.4"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, satisfying Rule 1, which recommends using the Vision System. Since the risk is low, cost efficiency is prioritized; therefore, AQL 4.0 sampling is appropriate per Rule 2. No deviation from standard rules is necessary as the process appears stable and within control. Thus, the inspection plan follows standard guidelines without override."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "2.80 ~ 3.60 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [],
+        "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+        "notes": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, satisfying Rule 1, which recommends using the Vision System. Since the risk is low, cost efficiency is prioritized; therefore, AQL 4.0 sampling is appropriate per Rule 2. No deviation from standard rules is necessary as the process appears stable and within control. Thus, the inspection plan follows standard guidelines without override."
+      },
+      {
+        "item_id": "INSP_HoleToEdgeDist_02",
+        "feature_id": "HoleToEdgeDist_02",
+        "feature_type": "HoleToEdgeDist",
+        "target_value": 3.2,
+        "tolerance": {
+          "upper": 0.4,
+          "lower": -0.4
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9728164672851562,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9726057052612305,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_03",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9713644981384277,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_04",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9674077033996582,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_05",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9661731719970703,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: None, Feature: HoleToEdgeDist_02, Type: HoleToEdgeDist, Size: 3.2mm, Tol: +0.4/ -0.4"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, satisfying Rule 1, which mandates use of Vision System. Since the risk is LOW, cost efficiency is prioritized; thus, AQL 4.0 sampling is appropriate per Rule 2. No dynamic tolerance adjustment is needed as there is no history of failures or process instability. Standard rules are followed without override."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "2.80 ~ 3.60 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [],
+        "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+        "notes": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, satisfying Rule 1, which mandates use of Vision System. Since the risk is LOW, cost efficiency is prioritized; thus, AQL 4.0 sampling is appropriate per Rule 2. No dynamic tolerance adjustment is needed as there is no history of failures or process instability. Standard rules are followed without override."
+      },
+      {
+        "item_id": "INSP_HoleToEdgeDist_03",
+        "feature_id": "HoleToEdgeDist_03",
+        "feature_type": "HoleToEdgeDist",
+        "target_value": 3.2,
+        "tolerance": {
+          "upper": 0.4,
+          "lower": -0.4
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.96, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.96, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "HoleToEdgeDist_03",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9708652496337891,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9686260223388672,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9666328430175781,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_04",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9635381698608398,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_05",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9623050689697266,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: None, Feature: HoleToEdgeDist_03, Type: HoleToEdgeDist, Size: 3.2mm, Tol: +0.4/ -0.4"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "No adjustment needed; tolerance is within acceptable range and risk is low.",
+          "reasoning_chain": "The risk level is LOW, and the historical evidence shows no known defects with severity greater than 0.00, indicating a stable process. The tolerance of ±0.4mm exceeds the 0.05mm threshold in Rule 1, so Vision System is appropriate for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and use AQL 4.0 sampling to prioritize cost efficiency without compromising quality. No dynamic tolerance adjustment is required as there is no history of failure or process instability."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "2.80 ~ 3.60 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [],
+        "dynamic_tolerance_adjustment": "No adjustment needed; tolerance is within acceptable range and risk is low.",
+        "notes": "The risk level is LOW, and the historical evidence shows no known defects with severity greater than 0.00, indicating a stable process. The tolerance of ±0.4mm exceeds the 0.05mm threshold in Rule 1, so Vision System is appropriate for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and use AQL 4.0 sampling to prioritize cost efficiency without compromising quality. No dynamic tolerance adjustment is required as there is no history of failure or process instability."
+      },
+      {
+        "item_id": "INSP_HoleToEdgeDist_04",
+        "feature_id": "HoleToEdgeDist_04",
+        "feature_type": "HoleToEdgeDist",
+        "target_value": 3.2,
+        "tolerance": {
+          "upper": 0.4,
+          "lower": -0.4
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.98, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.98, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9758548736572266,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_03",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9753322601318359,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9745745658874512,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_04",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9745635986328125,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_05",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9706120491027832,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: None, Feature: HoleToEdgeDist_04, Type: HoleToEdgeDist, Size: 3.2mm, Tol: +0.4/ -0.4"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "No adjustment needed; tolerance is within acceptable range and risk is low.",
+          "reasoning_chain": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, triggering Rule 1 to use the Vision System for precision. Since the risk is low, we follow Rule 2 and apply AQL 4.0 sampling to maintain cost efficiency without compromising quality. No dynamic tolerance adjustment is required as there is no indication of process drift or defect history."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "2.80 ~ 3.60 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [],
+        "dynamic_tolerance_adjustment": "No adjustment needed; tolerance is within acceptable range and risk is low.",
+        "notes": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, triggering Rule 1 to use the Vision System for precision. Since the risk is low, we follow Rule 2 and apply AQL 4.0 sampling to maintain cost efficiency without compromising quality. No dynamic tolerance adjustment is required as there is no indication of process drift or defect history."
+      },
+      {
+        "item_id": "INSP_HoleToEdgeDist_05",
+        "feature_id": "HoleToEdgeDist_05",
+        "feature_type": "HoleToEdgeDist",
+        "target_value": 3.2,
+        "tolerance": {
+          "upper": 0.4,
+          "lower": -0.4
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.97, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.96, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "HoleToEdgeDist_05",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9714841842651367,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_01",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9684686660766602,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_03",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9672479629516602,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_02",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9665484428405762,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "HoleToEdgeDist_04",
+              "process_step": null,
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.9639201164245605,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: None, Feature: HoleToEdgeDist_05, Type: HoleToEdgeDist, Size: 3.2mm, Tol: +0.4/ -0.4"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, triggering Rule 1 to use Vision System for accurate measurement. Since the risk is low, we follow Rule 2 and apply AQL 4.0 sampling to maintain cost efficiency without compromising quality. No dynamic tolerance adjustment is needed as the process appears stable and within specification."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "2.80 ~ 3.60 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [],
+        "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+        "notes": "The risk level is LOW, and the historical evidence shows no known defects with zero severity, indicating a stable process. The tolerance of ±0.4mm exceeds 0.05mm, triggering Rule 1 to use Vision System for accurate measurement. Since the risk is low, we follow Rule 2 and apply AQL 4.0 sampling to maintain cost efficiency without compromising quality. No dynamic tolerance adjustment is needed as the process appears stable and within specification."
+      },
+      {
+        "item_id": "INSP_BendAngle_01",
+        "feature_id": "BendAngle_01",
+        "feature_type": "BendAngle",
+        "target_value": 90,
+        "tolerance": {
+          "upper": 0.5,
+          "lower": -0.5
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8743867874145508,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8743867874145508,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8743867874145508,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.873603105545044,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.873603105545044,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.873603105545044,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8724024295806885,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8724024295806885,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8724024295806885,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8709313869476318,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8709313869476318,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8709313869476318,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8279438018798828,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8279438018798828,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8279438018798828,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 通用冷藏\nRefrigerate /, Feature: BendAngle_01, Type: BendAngle, Size: 90mm, Tol: +0.5/ -0.5"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and the historical evidence shows no known defects with severity > 0.00, indicating a stable process. The BendAngle feature has a tolerance of ±0.5mm, which exceeds the 0.05mm threshold in Rule 1, justifying the use of Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to prioritize cost efficiency without compromising quality. No dynamic tolerance adjustment is needed as there is no history of actual defects or process drift."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "89.50 ~ 90.50 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "XA-OI-0401",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-02",
+          "XA-OI-0312-01"
+        ],
+        "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+        "notes": "The risk level is LOW, and the historical evidence shows no known defects with severity > 0.00, indicating a stable process. The BendAngle feature has a tolerance of ±0.5mm, which exceeds the 0.05mm threshold in Rule 1, justifying the use of Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to prioritize cost efficiency without compromising quality. No dynamic tolerance adjustment is needed as there is no history of actual defects or process drift."
+      },
+      {
+        "item_id": "INSP_BendAngle_02",
+        "feature_id": "BendAngle_02",
+        "feature_type": "BendAngle",
+        "target_value": 90,
+        "tolerance": {
+          "upper": 0.5,
+          "lower": -0.5
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8744566440582275,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8744566440582275,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8744566440582275,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8741245269775391,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8741245269775391,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8741245269775391,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8722302913665771,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8722302913665771,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8722302913665771,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8704569339752197,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8704569339752197,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8704569339752197,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8267519474029541,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8267519474029541,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8267519474029541,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 通用冷藏\nRefrigerate /, Feature: BendAngle_02, Type: BendAngle, Size: 90mm, Tol: +0.5/ -0.5"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendAngle is 90° with a tolerance of ±0.5°, which exceeds the 0.05mm threshold (equivalent in angular measurement context), triggering Rule 1 to use Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency without compromising quality. No dynamic tolerance adjustment is needed due to absence of failure history or high-risk signals."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "89.50 ~ 90.50 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "XA-OI-0401",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-02",
+          "XA-OI-0312-01"
+        ],
+        "dynamic_tolerance_adjustment": "None - tolerance within acceptable range and risk is low",
+        "notes": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendAngle is 90° with a tolerance of ±0.5°, which exceeds the 0.05mm threshold (equivalent in angular measurement context), triggering Rule 1 to use Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency without compromising quality. No dynamic tolerance adjustment is needed due to absence of failure history or high-risk signals."
+      },
+      {
+        "item_id": "INSP_BendAngle_03",
+        "feature_id": "BendAngle_03",
+        "feature_type": "BendAngle",
+        "target_value": 90,
+        "tolerance": {
+          "upper": 0.5,
+          "lower": -0.5
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8735637664794922,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8735637664794922,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8735637664794922,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8734853267669678,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8734853267669678,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8734853267669678,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8726770877838135,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8726770877838135,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8726770877838135,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8720400333404541,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8720400333404541,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8720400333404541,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8268435001373291,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8268435001373291,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8268435001373291,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 通用冷藏\nRefrigerate /, Feature: BendAngle_03, Type: BendAngle, Size: 90mm, Tol: +0.5/ -0.5"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and the historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendAngle is 90° with a tolerance of ±0.5°, which exceeds the 0.05mm threshold in Rule 1, thus justifying the use of Vision System for accurate measurement. Since the risk is LOW, cost efficiency is prioritized, and Rule 2 applies: AQL 4.0 sampling is appropriate for stable processes. No dynamic tolerance adjustment is needed as there is no evidence of drift or increased variability. Therefore, the inspection plan follows standard rules without override."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "89.50 ~ 90.50 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "XA-OI-0401",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-02",
+          "XA-OI-0312-01"
+        ],
+        "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+        "notes": "The risk level is LOW, and the historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendAngle is 90° with a tolerance of ±0.5°, which exceeds the 0.05mm threshold in Rule 1, thus justifying the use of Vision System for accurate measurement. Since the risk is LOW, cost efficiency is prioritized, and Rule 2 applies: AQL 4.0 sampling is appropriate for stable processes. No dynamic tolerance adjustment is needed as there is no evidence of drift or increased variability. Therefore, the inspection plan follows standard rules without override."
+      },
+      {
+        "item_id": "INSP_BendAngle_04",
+        "feature_id": "BendAngle_04",
+        "feature_type": "BendAngle",
+        "target_value": 90,
+        "tolerance": {
+          "upper": 0.5,
+          "lower": -0.5
+        },
+        "risk": {
+          "level": "LOW",
+          "score": 0.0,
+          "evidence": [
+            "Unknown defect (Severity: 0.00, Sim: 0.88, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.88, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.88, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.87, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)",
+            "Unknown defect (Severity: 0.00, Sim: 0.83, Decay: 1.00)"
+          ],
+          "retrieved": [
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.877387285232544,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.877387285232544,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_04",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.877387285232544,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8724260330200195,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8724260330200195,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8724260330200195,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8716557025909424,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8716557025909424,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_02",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8716557025909424,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8693497180938721,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8693497180938721,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendAngle_03",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.8693497180938721,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "通用冷藏\nRefrigerate /",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.832956075668335,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "橡皮囊液压成型机液压\nHydraulic Forming E53234023200-01-FB/T1\n\nMYLAR\nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.832956075668335,
+              "description": null,
+              "occurred_at": null
+            },
+            {
+              "feature_id": "BendRadius_01",
+              "process_step": "钣金校形\nDress MYLAR \nE53234023200-01",
+              "defect_type": null,
+              "severity": 0.0,
+              "similarity": 0.832956075668335,
+              "description": null,
+              "occurred_at": null
+            }
+          ],
+          "anchor_text": "Step: 通用冷藏\nRefrigerate /, Feature: BendAngle_04, Type: BendAngle, Size: 90mm, Tol: +0.5/ -0.5"
+        },
+        "decision": {
+          "method": "Vision System",
+          "sampling_rate": "AQL 4.0",
+          "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+          "reasoning_chain": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendAngle tolerance is ±0.5mm, which exceeds the 0.05mm threshold in Rule 1, justifying the use of Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency. No dynamic tolerance adjustment is needed as there is no indication of process drift or failure history."
+        },
+        "measurement_method": "Vision System",
+        "equipment": "Vision System (AP-SAM)",
+        "sampling_rate": "AQL 4.0",
+        "acceptance_criteria": "89.50 ~ 90.50 mm",
+        "frequency": "Per batch",
+        "referenced_standards": [
+          "XA-OI-0401",
+          "XA-QI-0401",
+          "AIPS 03-10-005",
+          "XA-OI-0312-02",
+          "XA-OI-0312-01"
+        ],
+        "dynamic_tolerance_adjustment": "None - tolerance within standard range and risk is low",
+        "notes": "The risk level is LOW, and historical evidence shows no known defects with severity > 0.00, indicating a stable process. The nominal BendAngle tolerance is ±0.5mm, which exceeds the 0.05mm threshold in Rule 1, justifying the use of Vision System for accurate measurement. Since the process is stable and risk is low, we follow Rule 2 and apply AQL 4.0 sampling to optimize cost efficiency. No dynamic tolerance adjustment is needed as there is no indication of process drift or failure history."
+      }
+    ]
+  }
+}
