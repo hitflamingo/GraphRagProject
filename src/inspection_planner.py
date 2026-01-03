@@ -234,13 +234,20 @@ def _compose_inspection_item(
     target = context.get("target_value", 0)
     tol = context.get("tolerance", {})
     standards = context.get("standards", [])
-    
-    tol_upper = tol.get("upper", 0.1)
-    tol_lower = tol.get("lower", -0.1)
-    lower_bound = target + tol_lower
-    upper_bound = target + tol_upper
-    
-    acceptance = f"{lower_bound:.2f} to {upper_bound:.2f} mm"
+    unit = context.get("unit", "mm")
+
+    # Safe tolerance handling to avoid TypeError when tolerances are None
+    tol_upper = tol.get("upper")
+    tol_lower = tol.get("lower")
+    if target is not None and tol_upper is not None and tol_lower is not None:
+        try:
+            upper_bound = target + float(tol_upper)
+            lower_bound = target + float(tol_lower)
+            acceptance = f"{lower_bound:.2f} ~ {upper_bound:.2f} {unit}"
+        except (ValueError, TypeError):
+            acceptance = f"Target {target} {unit} (Tol: Check Drawing)"
+    else:
+        acceptance = f"Target {target} {unit} (Tolerance Not Defined)"
     
     sampling_rate = decision.get("sampling_rate") or "AQL 4.0"
     method = decision.get("method") or "Vision System"

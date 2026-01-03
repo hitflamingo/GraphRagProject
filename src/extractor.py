@@ -376,7 +376,7 @@ def extract_features(
             ],
             response_format={"type": "json_object"},
             temperature=0,
-            max_tokens=8192,  # Raise limit to reduce truncation risk
+            max_tokens=16384,  # Raise limit to reduce truncation risk
         )
 
         content = response.choices[0].message.content

@@ -448,6 +448,17 @@ def main():
     fusion.add_argument("--part-id", help="Part ID (optional)")
     fusion.add_argument("--no-llm", action="store_true", help="Disable LLM")
     fusion.add_argument("--output", help="Output JSON path")
+
+    # Command: fusion-plan (Data fusion then inspection plan)
+    fusion_plan = subparsers.add_parser(
+        "fusion-plan",
+        help="Ingest with data fusion and immediately generate inspection plan",
+    )
+    fusion_plan.add_argument("--drawing", required=True, help="Path to drawing")
+    fusion_plan.add_argument("--process-card", required=True, help="Path to process card")
+    fusion_plan.add_argument("--part-id", help="Part ID (optional)")
+    fusion_plan.add_argument("--no-llm", action="store_true", help="Disable LLM")
+    fusion_plan.add_argument("--output", help="Output JSON path")
     
     # Command: full-workflow
     full = subparsers.add_parser("full-workflow", help="Run complete workflow")
@@ -515,6 +526,35 @@ def main():
             else:
                 print("\n" + "="*80)
                 print("DATA FUSION RESULTS")
+                print("="*80)
+                print(output)
+
+        elif args.command == "fusion-plan":
+            fusion_result = agent.ingest_with_fusion(
+                args.drawing,
+                args.process_card,
+                args.part_id,
+                use_llm=not args.no_llm,
+                advanced_mode=True,
+            )
+            part_id = fusion_result.get("part_id") or (fusion_result.get("extraction") or {}).get("part_id")
+            plan = agent.generate_inspection_plan(part_id)
+            combined = {
+                "fusion": fusion_result,
+                "inspection_plan": plan,
+            }
+            output = json.dumps(combined, indent=2, ensure_ascii=False)
+            if args.output:
+                output_path = Path(args.output)
+                # If user passed a directory or a path without suffix, default to fusion_plan.json inside it.
+                if output_path.is_dir() or output_path.suffix == "":
+                    output_path = output_path / "fusion_plan.json"
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                output_path.write_text(output, encoding='utf-8')
+                print(f"\nFusion+Plan results written to {output_path}")
+            else:
+                print("\n" + "="*80)
+                print("FUSION + PLAN RESULTS")
                 print("="*80)
                 print(output)
         
