@@ -24,6 +24,13 @@ class AgentState(TypedDict):
     process_data: Optional[Dict[str, Any]]      # Output from parse_process_card.py
     risk_report: Optional[Dict[str, Any]]       # Output from risk_miner.py
     inspection_plan: Optional[Dict[str, Any]]   # Output from inspection_planner.py
+    measurement_data: Optional[Dict[str, Any]]
+    anomaly_event: Optional[Dict[str, Any]]
+    defect_record: Optional[Dict[str, Any]]
+    graph_cot_report: Optional[Dict[str, Any]]
+    human_review_required: bool
+    offline_mode: bool
+    measurement_fixture_path: Optional[str]
     
     # Control flow state
     next_agent: str                              # Name of next agent to execute
@@ -47,7 +54,9 @@ def create_initial_state(
     drawing_path: str,
     process_card_path: str,
     part_id: Optional[str] = None,
-    max_iterations: int = 20
+    max_iterations: int = 20,
+    offline_mode: bool = True,
+    measurement_fixture_path: Optional[str] = None,
 ) -> AgentState:
     """
     Create initial state for the workflow.
@@ -73,6 +82,13 @@ def create_initial_state(
         process_data=None,
         risk_report=None,
         inspection_plan=None,
+        measurement_data=None,
+        anomaly_event=None,
+        defect_record=None,
+        graph_cot_report=None,
+        human_review_required=False,
+        offline_mode=offline_mode,
+        measurement_fixture_path=measurement_fixture_path,
         next_agent="Supervisor",  # Start with Supervisor
         errors=[],
         iteration_count=0,
