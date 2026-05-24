@@ -1,0 +1,49 @@
+{
+  "part_name": "",
+  "ground_truth_features": [
+    {
+      "feature_id": "Edge_001",
+      "feature_type": "Edge",
+      "nominal_dimension": 48.0,
+      "dimension_tolerance": {
+        "source": "Global Standard",
+        "reference_standard": "ABD0001",
+        "value_upper": 0.2,
+        "value_lower": -0.2
+      }
+    },
+    {
+      "feature_id": "Edge_002",
+      "feature_type": "Edge",
+      "nominal_dimension": 24.0,
+      "dimension_tolerance": {
+        "source": "Global Standard",
+        "reference_standard": "ABD0001",
+        "value_upper": 0.2,
+        "value_lower": -0.2
+      }
+    },
+    {
+      "feature_id": "Chamfer_001",
+      "feature_type": "Chamfer",
+      "nominal_dimension": 6.0,
+      "dimension_tolerance": {
+        "source": "Global Standard",
+        "reference_standard": "ABD0001",
+        "value_upper": 0.1,
+        "value_lower": -0.1
+      }
+    },
+    {
+      "feature_id": "Chamfer_002",
+      "feature_type": "Chamfer",
+      "nominal_dimension": 6.0,
+      "dimension_tolerance": {
+        "source": "Global Standard",
+        "reference_standard": "ABD0001",
+        "value_upper": 0.1,
+        "value_lower": -0.1
+      }
+    }
+  ]
+}
