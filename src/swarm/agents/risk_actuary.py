@@ -11,6 +11,7 @@ from src.swarm.graph_cot import GraphCoTService
 from src.swarm.offline_graph import build_default_offline_graph
 from src.swarm.state import AgentState
 from src.swarm.tools import assess_topology_risk_tool, generate_adaptive_plan_tool
+from src.swarm.vision import serialize_anomaly_context
 
 
 def _offline_plan(part_id: str, event: Dict[str, Any], report: Dict[str, Any]) -> Dict[str, Any]:
@@ -23,6 +24,44 @@ def _offline_plan(part_id: str, event: Dict[str, Any], report: Dict[str, Any]) -
             "risk_score": report["risk_score"],
             "inspection_method": "AP-SAM + CMM review" if report["requires_human_review"] else "AP-SAM",
             "sampling_rate": "100%" if report["requires_human_review"] else "AQL 2.5",
+            "reasoning": report["serialized_context"],
+        }],
+        "recommendations": report["recommendations"],
+    }
+
+
+def _online_graph_cot_fallback(anomaly_event: Dict[str, Any], risk_context: Dict[str, Any]) -> Dict[str, Any]:
+    evidence = risk_context.get("retrieved") or risk_context.get("evidence") or []
+    has_evidence = bool(evidence)
+    risk_score = float(risk_context.get("score") or 0.0)
+    confidence = 0.7 if has_evidence else 0.5
+    return {
+        "serialized_context": serialize_anomaly_context(anomaly_event),
+        "retrieval_level": "neo4j_risk_retrieval" if has_evidence else "none",
+        "evidence_paths": evidence,
+        "risk_types": ["process_state"] if has_evidence else [],
+        "risk_score": round(risk_score, 3),
+        "confidence": confidence,
+        "root_cause": "Unknown",
+        "recommendations": [
+            "Request human expert review and add confirmed root cause to knowledge graph.",
+            "Use strict inspection on the affected feature until online evidence is confirmed.",
+        ],
+        "requires_human_review": confidence < 0.95,
+    }
+
+
+def _online_plan_from_report(part_id: str, anomaly_event: Dict[str, Any], report: Dict[str, Any]) -> Dict[str, Any]:
+    review_required = bool(report["requires_human_review"])
+    return {
+        "part_id": part_id,
+        "total_items": 1,
+        "overall_risk_level": "HIGH" if review_required or report["risk_score"] >= 0.4 else "LOW",
+        "inspection_items": [{
+            "feature_id": anomaly_event["feature_id"],
+            "risk_score": report["risk_score"],
+            "inspection_method": "CMM + engineering review" if review_required else "AP-SAM",
+            "sampling_rate": "100%" if review_required else "AQL 2.5",
             "reasoning": report["serialized_context"],
         }],
         "recommendations": report["recommendations"],
@@ -118,6 +157,42 @@ def risk_actuary_node(state: AgentState) -> Dict[str, Any]:
                 },
             }
 
+        if anomaly_event:
+            risk_result = assess_topology_risk_tool.invoke({
+                "part_id": part_id,
+                "feature_context": anomaly_event,
+            })
+            risk_context = risk_result["data"] if risk_result["status"] == "SUCCESS" else {
+                "level": "LOW",
+                "score": 0.0,
+                "evidence": [],
+                "retrieved": [],
+            }
+            report = _online_graph_cot_fallback(anomaly_event, risk_context)
+            inspection_plan = _online_plan_from_report(part_id, anomaly_event, report)
+            risk_report = {
+                "summary": {
+                    "critical_count": 0,
+                    "high_count": 1 if report["risk_score"] >= 0.4 or report["requires_human_review"] else 0,
+                    "low_count": 0 if report["risk_score"] >= 0.4 or report["requires_human_review"] else 1,
+                    "max_risk_score": report["risk_score"],
+                    "critical_features": [],
+                },
+                "needs_review": report["requires_human_review"],
+            }
+            return {
+                "messages": [AIMessage(content=f"Risk-Actuary completed online Graph-CoT fallback via {report['retrieval_level']}")],
+                "risk_report": risk_report,
+                "inspection_plan": inspection_plan,
+                "graph_cot_report": report,
+                "human_review_required": report["requires_human_review"],
+                "next_agent": "Supervisor",
+                "agent_reflections": {
+                    **state.get("agent_reflections", {}),
+                    "RiskActuary": f"Online risk assessment complete via {report['retrieval_level']}.",
+                },
+            }
+
         inspection_items = []
         for i, feature in enumerate(features, 1):
             feature_id = feature.get("feature_id", f"Feature_{i}")
@@ -148,8 +223,19 @@ def risk_actuary_node(state: AgentState) -> Dict[str, Any]:
             "overall_risk_level": "LOW",
             "recommendations": [],
         }
+        risk_report = {
+            "summary": {
+                "critical_count": sum(1 for item in inspection_items if item["risk_level"] == "CRITICAL"),
+                "high_count": sum(1 for item in inspection_items if item["risk_level"] == "HIGH"),
+                "low_count": sum(1 for item in inspection_items if item["risk_level"] == "LOW"),
+                "max_risk_score": max([item["risk_score"] for item in inspection_items] or [0.0]),
+                "critical_features": [item["feature_id"] for item in inspection_items if item["risk_level"] == "CRITICAL"],
+            },
+            "needs_review": False,
+        }
         return {
             "messages": [AIMessage(content="Risk-Actuary completed direct planning")],
+            "risk_report": risk_report,
             "inspection_plan": inspection_plan,
             "next_agent": "Supervisor",
             "agent_reflections": {
