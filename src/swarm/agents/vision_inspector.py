@@ -5,7 +5,11 @@ from typing import Any, Dict, List
 from langchain_core.messages import AIMessage
 
 from src.swarm.state import AgentState
-from src.swarm.vision import MockAPSamMeasurementProvider, detect_anomalies
+from src.swarm.vision import (
+    ExternalMeasurementJsonProvider,
+    MockAPSamMeasurementProvider,
+    detect_anomalies,
+)
 
 
 def _features_with_process_context(state: AgentState) -> List[Dict[str, Any]]:
@@ -28,9 +32,14 @@ def _features_with_process_context(state: AgentState) -> List[Dict[str, Any]]:
 
 def vision_inspector_node(state: AgentState) -> Dict[str, Any]:
     features = _features_with_process_context(state)
-    provider = MockAPSamMeasurementProvider(state.get("measurement_fixture_path"))
+    if state.get("offline_mode", True):
+        provider = MockAPSamMeasurementProvider(state.get("measurement_fixture_path"))
+        source = "ap_sam_mock"
+    else:
+        provider = ExternalMeasurementJsonProvider(state.get("measurement_fixture_path"))
+        source = "external_measurement_json"
     measurements = provider.measure(state.get("part_id"), features)
-    anomalies = detect_anomalies(state.get("part_id"), features, measurements)
+    anomalies = detect_anomalies(state.get("part_id"), features, measurements, source=source)
     anomaly_event = anomalies[0] if anomalies else None
     status = "anomaly detected" if anomaly_event else "all measurements within tolerance"
     return {

@@ -29,10 +29,42 @@ class MockAPSamMeasurementProvider:
         return measurements
 
 
+class ExternalMeasurementJsonProvider:
+    def __init__(self, measurement_path: Optional[str]) -> None:
+        if not measurement_path:
+            raise ValueError("Online mode requires --measurements with external measurement JSON.")
+        self.measurement_path = measurement_path
+        self.unknown_feature_ids: List[str] = []
+
+    def measure(self, part_id: str, features: Iterable[Dict[str, Any]]) -> Dict[str, float]:
+        path = Path(self.measurement_path)
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"Invalid measurement JSON: {exc}") from exc
+
+        if not isinstance(payload, dict):
+            raise ValueError("Measurement JSON must be an object mapping feature_id to numeric value.")
+
+        feature_ids = {feature["feature_id"] for feature in features}
+        measurements: Dict[str, float] = {}
+        unknown: List[str] = []
+        for feature_id, value in payload.items():
+            if not isinstance(value, (int, float)) or isinstance(value, bool):
+                raise ValueError(f"Measurement for {feature_id} must be numeric.")
+            measurements[str(feature_id)] = float(value)
+            if feature_id not in feature_ids:
+                unknown.append(str(feature_id))
+
+        self.unknown_feature_ids = sorted(unknown)
+        return measurements
+
+
 def detect_anomalies(
     part_id: str,
     features: Iterable[Dict[str, Any]],
     measurements: Dict[str, float],
+    source: str = "ap_sam_mock",
 ) -> List[Dict[str, Any]]:
     events: List[Dict[str, Any]] = []
     for feature in features:
@@ -61,7 +93,7 @@ def detect_anomalies(
                 "deviation": deviation,
                 "tolerance": {"upper": upper, "lower": lower},
                 "status": "FAIL",
-                "source": "ap_sam_mock",
+                "source": source,
             })
     return events
 
