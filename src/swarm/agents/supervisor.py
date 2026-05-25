@@ -62,6 +62,12 @@ def supervisor_node(state: AgentState) -> Dict[str, Any]:
     elif not has_process_data:
         next_agent = "KGLibrarian"
         reasoning = "Process data missing, routing to KGLibrarian"
+    elif state.get("measurement_data") is None:
+        next_agent = "VisionInspector"
+        reasoning = "Measurement data missing, routing to VisionInspector"
+    elif state.get("anomaly_event") and not state.get("defect_record"):
+        next_agent = "KGLibrarian"
+        reasoning = "Anomaly detected without defect record, routing to KGLibrarian"
     elif not has_inspection_plan:
         next_agent = "RiskActuary"
         reasoning = "Inspection plan missing, routing to RiskActuary"
