@@ -6,12 +6,21 @@ This script demonstrates the complete data fusion process according to the Techn
 
 from pathlib import Path
 import sys
+import os
+
+import pytest
 
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.main_agent import MainAgent
 from src.config import load_settings
+
+
+pytestmark = pytest.mark.skipif(
+    os.getenv("RUN_NEO4J_TESTS") != "1",
+    reason="Neo4j integration tests require RUN_NEO4J_TESTS=1",
+)
 
 
 def test_data_fusion():
