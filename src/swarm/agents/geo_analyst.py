@@ -53,6 +53,7 @@ def geo_analyst_node(state: AgentState) -> Dict[str, Any]:
             tool_result = extract_features_tool.invoke({
                 "drawing_path": drawing_path,
                 "part_id": part_id,
+                "strict": not state.get("offline_mode", True),
             })
             if tool_result["status"] != "SUCCESS":
                 raise RuntimeError(tool_result["message"])

@@ -322,6 +322,7 @@ def extract_features(
     client: Optional[OpenAI] = None,
     model: Optional[str] = None,
     settings: Optional[Settings] = None,
+    strict: bool = False,
 ) -> Dict[str, Any]:
     """
     Run VLM-based extraction. Falls back to a deterministic mock when the API key is absent.
@@ -339,11 +340,15 @@ def extract_features(
         raise FileNotFoundError(f"File not found: {image_path}")
 
     if not settings.openai.api_key:
+        if strict:
+            raise ValueError("Online feature extraction failed; mock fallback is disabled. Missing OPENAI_API_KEY.")
         print(f"Warning: No API key found. Using mock extraction for {img_path.name}")
         return _mock_extraction(resolved_part_id)
 
     # Check PDF support
     if img_path.suffix.lower() == '.pdf' and not PDF_SUPPORT:
+        if strict:
+            raise ValueError("Online feature extraction failed; mock fallback is disabled. PDF support is unavailable.")
         print("Warning: PDF support not available. Install with: pip install pdf2image Pillow")
         print("Falling back to mock extraction.")
         return _mock_extraction(resolved_part_id)
@@ -402,6 +407,8 @@ def extract_features(
         return payload
     
     except Exception as e:
+        if strict:
+            raise RuntimeError("Online feature extraction failed; mock fallback is disabled.") from e
         print(f"Warning: VLM extraction failed: {e}")
         print("Falling back to mock extraction.")
         return _mock_extraction(resolved_part_id)
@@ -540,6 +547,7 @@ def extract_features_advanced(
     settings: Optional[Settings] = None,
     extract_metadata: bool = True,
     extract_gdt: bool = True,
+    strict: bool = False,
 ) -> Dict[str, Any]:
     """
     Advanced extraction with multi-stage processing:
@@ -553,7 +561,7 @@ def extract_features_advanced(
     client = client or build_openai_client(settings) if settings.openai.api_key else None
     
     # Stage 1: Extract main features
-    features_data = extract_features(image_path, part_id, client, None, settings)
+    features_data = extract_features(image_path, part_id, client, None, settings, strict=strict)
     
     # Stage 2: Extract header metadata (if requested)
     if extract_metadata and client:

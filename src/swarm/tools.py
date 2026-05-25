@@ -23,7 +23,8 @@ from src.config import Settings, load_settings, build_openai_client
 def extract_features_tool(
     drawing_path: str,
     part_id: Optional[str] = None,
-    focus_area: Optional[List[int]] = None
+    focus_area: Optional[List[int]] = None,
+    strict: bool = False,
 ) -> Dict[str, Any]:
     """
     Extract geometric features and tolerances from technical drawing.
@@ -35,6 +36,7 @@ def extract_features_tool(
         drawing_path: Path to the drawing file (PDF/PNG/JPG)
         part_id: Optional part identifier (defaults to filename)
         focus_area: Optional bounding box [x1, y1, x2, y2] to focus analysis
+        strict: Disable deterministic mock fallback for online mode
         
     Returns:
         Dictionary containing extracted features, tolerances, and metadata
@@ -53,7 +55,8 @@ def extract_features_tool(
             client,
             settings,
             extract_metadata=True,
-            extract_gdt=True
+            extract_gdt=True,
+            strict=strict,
         )
         
         return {
