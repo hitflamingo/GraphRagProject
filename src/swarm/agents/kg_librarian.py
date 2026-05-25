@@ -9,7 +9,11 @@ from langchain_core.messages import AIMessage
 
 from src.swarm.offline_graph import OfflineGraphRepository, build_default_offline_graph
 from src.swarm.state import AgentState
-from src.swarm.tools import build_knowledge_graph_tool, ingest_process_card_tool
+from src.swarm.tools import (
+    build_knowledge_graph_tool,
+    ingest_process_card_tool,
+    persist_defect_record_tool,
+)
 
 
 def _process_data_from_repo(repo: OfflineGraphRepository, part_id: str) -> Dict[str, Any]:
@@ -21,21 +25,38 @@ def _process_data_from_repo(repo: OfflineGraphRepository, part_id: str) -> Dict[
     }
 
 
-def _defect_from_event(repo: OfflineGraphRepository, part_id: str, event: Optional[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
-    if not event:
-        return None
-    return repo.insert_defect_record({
+def _severity_from_event(event: Dict[str, Any]) -> float:
+    deviation = float(event["deviation"])
+    target_value = float(event["target_value"])
+    return round(min(abs(deviation) / max(abs(target_value) * 0.05, 0.01), 1.0), 3)
+
+
+def _defect_payload_from_event(
+    part_id: str,
+    event: Dict[str, Any],
+    root_cause: str,
+) -> Dict[str, Any]:
+    return {
+        "defect_id": f"{part_id}_{event['feature_id']}_{event['source']}",
         "part_id": part_id,
         "feature_id": event["feature_id"],
         "measured_value": event["measured_value"],
         "target_value": event["target_value"],
         "deviation": event["deviation"],
-        "severity": min(abs(event["deviation"]) / max(abs(event["target_value"]) * 0.05, 0.01), 1.0),
+        "severity": _severity_from_event(event),
         "source": event["source"],
-        "root_cause": "Pending Graph-CoT diagnosis",
+        "root_cause": root_cause,
         "risk_type": "process_state",
         "process_step": event.get("process_step", "Unknown"),
-    })
+    }
+
+
+def _defect_from_event(repo: OfflineGraphRepository, part_id: str, event: Optional[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    if not event:
+        return None
+    return repo.insert_defect_record(
+        _defect_payload_from_event(part_id, event, root_cause="Pending Graph-CoT diagnosis")
+    )
 
 
 def kg_librarian_node(state: AgentState) -> Dict[str, Any]:
@@ -86,9 +107,22 @@ def kg_librarian_node(state: AgentState) -> Dict[str, Any]:
                     "drawing_data": drawing_data,
                     "process_data": process_data,
                 })
+                if graph_result["status"] != "SUCCESS":
+                    raise RuntimeError(graph_result["message"])
                 graph_message = graph_result["message"]
             else:
                 graph_message = "process data already available"
+            if state.get("anomaly_event") and not state.get("defect_record"):
+                record = _defect_payload_from_event(
+                    part_id,
+                    state["anomaly_event"],
+                    root_cause="Pending online diagnosis",
+                )
+                defect_result = persist_defect_record_tool.invoke({"record": record})
+                if defect_result["status"] != "SUCCESS":
+                    raise RuntimeError(defect_result["message"])
+                defect_record = defect_result["data"]
+                graph_message = defect_result["message"]
 
         reflection = f"Process context ready; {graph_message}."
         if defect_record:

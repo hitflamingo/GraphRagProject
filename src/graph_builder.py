@@ -52,6 +52,66 @@ class GraphBuilder:
             session.run(
                 "CREATE CONSTRAINT IF NOT EXISTS FOR (tol:Tolerance) REQUIRE tol.tolerance_id IS UNIQUE"
             )
+            session.run(
+                "CREATE CONSTRAINT IF NOT EXISTS FOR (d:DefectRecord) REQUIRE d.defect_id IS UNIQUE"
+            )
+
+    def insert_defect_record(self, record: Dict[str, Any]) -> Dict[str, Any]:
+        required = ["defect_id", "part_id", "feature_id", "measured_value", "target_value", "deviation", "severity", "source"]
+        missing = [key for key in required if key not in record]
+        if missing:
+            raise ValueError(f"Defect record missing required fields: {', '.join(missing)}")
+
+        with self.driver.session() as session:
+            session.execute_write(self._merge_defect_record, record)
+        return dict(record)
+
+    @staticmethod
+    def _merge_defect_record(tx, record: Dict[str, Any]) -> None:
+        feature_uid = record.get("feature_uid") or f"{record['part_id']}::{record['feature_id']}"
+        process_step = record.get("process_step", "Unknown")
+        tx.run(
+            """
+            MERGE (d:DefectRecord {defect_id: $defect_id})
+            SET d.part_id = $part_id,
+                d.feature_id = $feature_id,
+                d.measured_value = $measured_value,
+                d.target_value = $target_value,
+                d.deviation = $deviation,
+                d.severity = $severity,
+                d.source = $source,
+                d.root_cause = $root_cause,
+                d.risk_type = $risk_type,
+                d.process_step = $process_step,
+                d.type = $type,
+                d.description = $description,
+                d.occurred_at = datetime()
+            WITH d
+            OPTIONAL MATCH (f:GeoFeature {feature_uid: $feature_uid})
+            FOREACH (_ IN CASE WHEN f IS NULL THEN [] ELSE [1] END |
+                MERGE (f)-[:HAS_DEFECT]->(d)
+            )
+            WITH d
+            OPTIONAL MATCH (ps:ProcessStep {name: $process_step})
+            FOREACH (_ IN CASE WHEN ps IS NULL THEN [] ELSE [1] END |
+                MERGE (ps)-[:HAS_DEFECT_HISTORY]->(d)
+            )
+            """,
+            defect_id=record["defect_id"],
+            part_id=record["part_id"],
+            feature_id=record["feature_id"],
+            measured_value=record["measured_value"],
+            target_value=record["target_value"],
+            deviation=record["deviation"],
+            severity=record["severity"],
+            source=record["source"],
+            root_cause=record.get("root_cause", "Pending online diagnosis"),
+            risk_type=record.get("risk_type", "process_state"),
+            process_step=process_step,
+            type=record.get("type", "OnlineMeasurementAnomaly"),
+            description=record.get("description", f"{record['feature_id']} exceeded tolerance"),
+            feature_uid=feature_uid,
+        )
 
     def build_graph(self, extraction: Dict[str, Any]) -> None:
         part_id = extraction.get("part_id")

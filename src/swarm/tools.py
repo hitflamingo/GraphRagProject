@@ -177,6 +177,38 @@ def build_knowledge_graph_tool(
 
 
 @tool
+def persist_defect_record_tool(record: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Persist an online measurement anomaly as a DefectRecord in Neo4j.
+
+    Args:
+        record: Defect payload with part, feature, measurement, severity, and source fields
+
+    Returns:
+        Tool status and persisted defect payload
+    """
+    settings = load_settings()
+    builder = None
+    try:
+        builder = GraphBuilder(settings)
+        persisted = builder.insert_defect_record(record)
+        return {
+            "status": "SUCCESS",
+            "data": persisted,
+            "message": f"Persisted defect record {persisted['defect_id']}",
+        }
+    except Exception as e:
+        return {
+            "status": "FAILURE",
+            "data": {},
+            "message": f"Defect record persistence failed: {str(e)}",
+        }
+    finally:
+        if builder:
+            builder.close()
+
+
+@tool
 def query_graph_tool(cypher_query: str, parameters: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     """
     Execute a Cypher query against the knowledge graph.
@@ -368,6 +400,7 @@ GEO_ANALYST_TOOLS = [
 KG_LIBRARIAN_TOOLS = [
     ingest_process_card_tool,
     build_knowledge_graph_tool,
+    persist_defect_record_tool,
     query_graph_tool,
 ]
 
